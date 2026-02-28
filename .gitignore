@@ -1,0 +1,100 @@
+﻿# Unity Generated Files
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emory[Cc]aptures/
+[Rr]ecordings/
+
+# Asset meta data
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Unity3D generated meta file
+*.pidb
+*.pdb
+*.mdb
+
+# Unity3D generated file on crash reports
+sysinfo.txt
+
+# Builds
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# Crashlytics generated file
+crashlytics-build.properties
+
+# Packed Addressables
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+
+# Streaming Assets
+/[Aa]ssets/[Ss]treaming[Aa]ssets/aa.meta
+/[Aa]ssets/[Ss]treaming[Aa]ssets/*/aa/*
+
+# Temporary auto-generated files
+~UnityDirMonSyncFile~*
+
+# Visual Studio / MonoDevelop
+.vs/
+.vscode/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.opendb
+*.VC.db
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Gradle (Android builds)
+.gradle/
+build/
+
+# Consulo
+.consulo/
+
+# Unity Asset Store Tools
+Assets/AssetStoreTools*
+Assets/Plugins/PlasticSCM*
+
+# Private files
+*.private
+*.private.meta
+*.private.*
+
+# Exported objects
+ExportedObj/
+
+# TextMesh Pro
+/[Aa]ssets/TextMesh Pro/
+/[Aa]ssets/TextMeshPro/
+
+# Ignore package cache (optional, remove if you want to version control)
+# /Packages/packages-lock.json
+
+
