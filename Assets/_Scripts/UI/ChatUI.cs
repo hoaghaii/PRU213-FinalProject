@@ -1,143 +1,151 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
 using UnityEngine;
-using TMPro;
 
-namespace Animation2D.UI
+/// <summary>
+/// Chat window với 2 bubble slot cố định trong prefab (không Instantiate/Destroy).
+/// slot[0] = bubble trên (cũ hơn) — slot[1] = bubble dưới (mới nhất).
+/// Khi có message mới:
+///   1. slot[0] fade ra
+///   2. slot[1] move lên vị trí slot[0]
+///   3. slot[1] (vị trí mới) hiện message mới
+/// </summary>
+public class ChatUI : MonoBehaviour
 {
-    /// <summary>
-    /// UI hiển thị chat messages theo style Visual Novel.
-    /// Dùng cho các đoạn chat của nhóm sinh viên.
-    /// </summary>
-    public class ChatUI : MonoBehaviour
+    [Header("Bubble Slots — kéo trực tiếp từ prefab hierarchy")]
+    [SerializeField] private ChatBubble slot0; // bubble trên (cũ hơn)
+    [SerializeField] private ChatBubble slot1; // bubble dưới (mới nhất)
+
+    [Header("Behavior")]
+    [SerializeField] private float fadeDuration    = 0.3f;
+    [SerializeField] private float slideDuration   = 0.25f;
+    [SerializeField] private float slideUpDistance = 80f;
+
+    // lưu vị trí gốc của 2 slot để biết chỗ cần reset về
+    private Vector2 _slot0OriginPos;
+    private Vector2 _slot1OriginPos;
+
+    private bool _isAnimating;
+    private string _pendingMessage;
+
+    private void Awake()
     {
-        [Header("UI References")]
-        [SerializeField] private GameObject _chatPanel;
-        [SerializeField] private Transform _messageContainer;
-        [SerializeField] private GameObject _messagePrefab;
-
-        [Header("Settings")]
-        [SerializeField] private int _maxMessages = 10;
-        [SerializeField] private float _messageSpacing = 10f;
-
-        [Header("Colors")]
-        [SerializeField] private Color _normalColor = Color.white;
-        [SerializeField] private Color _warningColor = Color.yellow;
-        [SerializeField] private Color _errorColor = Color.red;
-        [SerializeField] private Color _successColor = Color.green;
-
-        private List<GameObject> _messageObjects = new List<GameObject>();
-
-        /// <summary>
-        /// Thêm message mới
-        /// </summary>
-        public void AddMessage(string message, MessageType type = MessageType.Normal)
+        if (slot0 == null || slot1 == null)
         {
-            if (_messagePrefab == null || _messageContainer == null) return;
-
-            // Tạo message object
-            var msgObj = Instantiate(_messagePrefab, _messageContainer);
-            var tmpText = msgObj.GetComponentInChildren<TextMeshProUGUI>();
-
-            if (tmpText != null)
-            {
-                tmpText.text = message;
-                tmpText.color = GetColorForType(type);
-            }
-
-            _messageObjects.Add(msgObj);
-
-            // Giới hạn số message
-            while (_messageObjects.Count > _maxMessages)
-            {
-                var oldest = _messageObjects[0];
-                _messageObjects.RemoveAt(0);
-                Destroy(oldest);
-            }
+            Debug.LogError("[ChatUI] slot0 hoặc slot1 chưa được gán!", this);
+            return;
         }
 
-        /// <summary>
-        /// Thêm chat message với format "Speaker: Message"
-        /// </summary>
-        public void AddChatMessage(string speaker, string message)
+        _slot0OriginPos = ((RectTransform)slot0.transform).anchoredPosition;
+        _slot1OriginPos = ((RectTransform)slot1.transform).anchoredPosition;
+
+        // Ẩn cả 2 lúc đầu
+        slot0.HideImmediate();
+        slot1.HideImmediate();
+    }
+
+    // ─────────────────────────────────────────
+    //  PUBLIC API
+    // ─────────────────────────────────────────
+
+    public void AddMessage(string message)
+    {
+        if (_isAnimating)
         {
-            string formatted = string.IsNullOrEmpty(speaker) 
-                ? $"- \"{message}\"" 
-                : $"- {speaker}: \"{message}\"";
-            AddMessage(formatted, MessageType.Normal);
+            // Đang animate → queue message, hiện sau khi xong
+            _pendingMessage = message;
+            return;
+        }
+        StartCoroutine(ShowMessageRoutine(message));
+    }
+
+    // ─────────────────────────────────────────
+    //  INTERNAL
+    // ─────────────────────────────────────────
+
+    private IEnumerator ShowMessageRoutine(string message)
+    {
+        _isAnimating = true;
+
+        var rt0 = (RectTransform)slot0.transform;
+        var rt1 = (RectTransform)slot1.transform;
+
+        bool slot1HasContent = slot1.IsVisible;
+
+        if (!slot1HasContent)
+        {
+            // ── Lần đầu: chỉ hiện slot1 ở vị trí gốc ──
+            rt1.anchoredPosition = _slot1OriginPos;
+            slot1.Show(message);
+        }
+        else
+        {
+            // ── Đã có nội dung ở slot1: đẩy lên ──
+
+            // 1. Fade OUT slot0 (nếu đang hiện)
+            if (slot0.IsVisible)
+                yield return StartCoroutine(FadeOut(slot0.CanvasGroup, fadeDuration));
+
+            slot0.HideImmediate();
+            rt0.anchoredPosition = _slot0OriginPos;
+
+            // 2. Copy nội dung slot1 → slot0, rồi slide slot0 xuất hiện ở vị trí slot1-origin
+            //    (trông như slot1 "dịch chuyển lên")
+            slot0.Show(slot1.CanvasGroup != null
+                ? GetTextFrom(slot1)
+                : "");
+
+            // Đặt slot0 tại vị trí slot1 rồi slide lên về _slot0OriginPos
+            rt0.anchoredPosition = _slot1OriginPos;
+            slot0.CanvasGroup.alpha = 1f;
+
+            yield return StartCoroutine(SlideToPosition(rt0, _slot0OriginPos, slideDuration));
+
+            // 3. Reset slot1 về vị trí gốc và hiện message mới
+            rt1.anchoredPosition = _slot1OriginPos;
+            slot1.Show(message);
         }
 
-        /// <summary>
-        /// Thêm system/terminal message
-        /// </summary>
-        public void AddSystemMessage(string message)
-        {
-            AddMessage($"> {message}", MessageType.Warning);
-        }
+        _isAnimating = false;
 
-        /// <summary>
-        /// Thêm error message (như Git conflict)
-        /// </summary>
-        public void AddErrorMessage(string message)
+        // Xử lý pending message nếu có
+        if (_pendingMessage != null)
         {
-            AddMessage(message, MessageType.Error);
-        }
-
-        /// <summary>
-        /// Thêm success message
-        /// </summary>
-        public void AddSuccessMessage(string message)
-        {
-            AddMessage(message, MessageType.Success);
-        }
-
-        /// <summary>
-        /// Xóa tất cả messages
-        /// </summary>
-        public void ClearMessages()
-        {
-            foreach (var obj in _messageObjects)
-            {
-                Destroy(obj);
-            }
-            _messageObjects.Clear();
-        }
-
-        /// <summary>
-        /// Hiện chat panel
-        /// </summary>
-        public void Show()
-        {
-            if (_chatPanel != null)
-                _chatPanel.SetActive(true);
-        }
-
-        /// <summary>
-        /// Ẩn chat panel
-        /// </summary>
-        public void Hide()
-        {
-            if (_chatPanel != null)
-                _chatPanel.SetActive(false);
-        }
-
-        private Color GetColorForType(MessageType type)
-        {
-            return type switch
-            {
-                MessageType.Warning => _warningColor,
-                MessageType.Error => _errorColor,
-                MessageType.Success => _successColor,
-                _ => _normalColor
-            };
+            string next = _pendingMessage;
+            _pendingMessage = null;
+            StartCoroutine(ShowMessageRoutine(next));
         }
     }
 
-    public enum MessageType
+    private string GetTextFrom(ChatBubble bubble)
     {
-        Normal,
-        Warning,
-        Error,
-        Success
+        var tmp = bubble.GetComponentInChildren<TMPro.TMP_Text>();
+        return tmp != null ? tmp.text : "";
+    }
+
+    private IEnumerator FadeOut(CanvasGroup cg, float duration)
+    {
+        if (cg == null) yield break;
+        float t = 0f;
+        float start = cg.alpha;
+        while (t < duration)
+        {
+            t += Time.unscaledDeltaTime;
+            cg.alpha = Mathf.Lerp(start, 0f, t / duration);
+            yield return null;
+        }
+        cg.alpha = 0f;
+    }
+
+    private IEnumerator SlideToPosition(RectTransform rt, Vector2 target, float duration)
+    {
+        float t = 0f;
+        Vector2 start = rt.anchoredPosition;
+        while (t < duration)
+        {
+            t += Time.unscaledDeltaTime;
+            rt.anchoredPosition = Vector2.Lerp(start, target, Mathf.SmoothStep(0f, 1f, t / duration));
+            yield return null;
+        }
+        rt.anchoredPosition = target;
     }
 }
-
