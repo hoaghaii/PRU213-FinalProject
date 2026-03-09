@@ -11,8 +11,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - background
+  - bus_car
   - 
   - 
   - 
@@ -41,9 +41,27 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: New Layer 1
-    uniqueID: 1877999907
+  - name: background
+    uniqueID: 4098979059
     locked: 0
-  - name: New Layer 2
-    uniqueID: 2088552757
+  - name: bus
+    uniqueID: 1553857373
+    locked: 0
+  - name: character
+    uniqueID: 4098509589
+    locked: 0
+  - name: bus_car
+    uniqueID: 3809548153
+    locked: 0
+  - name: chat
+    uniqueID: 866422537
+    locked: 0
+  - name: character_2
+    uniqueID: 3628153737
+    locked: 0
+  - name: UI_chat
+    uniqueID: 3875855557
+    locked: 0
+  - name: UI_TexChat
+    uniqueID: 3855577045
     locked: 0
