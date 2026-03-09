@@ -28,12 +28,12 @@ namespace Animation2D
         
         public void SecondMsg()
         {
-            chatUI.AddMessage("Vãi nó đánh cháy asset trường rồi kìa");
+            chatUI.AddMessage("Hải: Vãi nó đánh cháy asset trường rồi kìa");
         }
         
         public void ThirdMsg()
         {
-            chatUI.AddMessage("Ai làm gì tiếp đi");
+            chatUI.AddMessage("Việt: Ai làm gì tiếp đi");
         }
 
         public void FourthMsg()
@@ -43,12 +43,12 @@ namespace Animation2D
         
         public void FifthMsg()
         {
-            chatUI.AddMessage("Tìm đc chỗ conflict rồi kìa, fix đi!!!!");
+            chatUI.AddMessage("Huy: Tìm đc chỗ conflict rồi kìa, fix đi!!!!");
         }
 
         public void SixthMsg()
         {
-            chatUI.AddMessage("Ae để tôi");
+            chatUI.AddMessage("Việt: Ae để tôi");
         }
 
         public void SeventhMsg()
@@ -63,11 +63,11 @@ namespace Animation2D
 
         public void NinthMsg()
         {
-            chatUI.AddMessage("May quá hết conflict rồi nộp bài cho thầy đi");
+            chatUI.AddMessage("Hải: May quá hết conflict rồi nộp bài cho thầy đi");
         }
         public void TenthMsg()
         {
-            chatUI.AddMessage("Thành công rồi ae ơiiiii");
+            chatUI.AddMessage("Việt, Huy, Hải: Thành công rồi ae ơiiiii");
         }
     }
 }

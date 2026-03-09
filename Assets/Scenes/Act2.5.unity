@@ -259,6 +259,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec880cac4d715a84aa4579905272edae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &282407219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 282407221}
+  - component: {fileID: 282407220}
+  m_Layer: 0
+  m_Name: SceneLoader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &282407220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282407219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66101790082145f7994289411aa84b5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &282407221
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282407219}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.1911955, y: -0.24476838, z: 1566.6244}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &327865114
 GameObject:
   m_ObjectHideFlags: 0
@@ -331,7 +375,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: ef521ef0809c1614e9efa6229d115d77, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -536,6 +580,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChatUI
       objectReference: {fileID: 0}
+    - target: {fileID: 1191900229980458339, guid: 9b0e5706a516f1e4084b3fac937cdc7a, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 6f0e422e09bedeb4e875148ba2c97577, type: 2}
+    - target: {fileID: 1191900229980458339, guid: 9b0e5706a516f1e4084b3fac937cdc7a, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -1547219571993023506, guid: 6f0e422e09bedeb4e875148ba2c97577, type: 2}
+    - target: {fileID: 1191900229980458339, guid: 9b0e5706a516f1e4084b3fac937cdc7a, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3528285195965486414, guid: 9b0e5706a516f1e4084b3fac937cdc7a, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 644.84705
@@ -590,6 +646,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7562201600807827327, guid: 9b0e5706a516f1e4084b3fac937cdc7a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829581639737572869, guid: 9b0e5706a516f1e4084b3fac937cdc7a, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 6f0e422e09bedeb4e875148ba2c97577, type: 2}
+    - target: {fileID: 7829581639737572869, guid: 9b0e5706a516f1e4084b3fac937cdc7a, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -1547219571993023506, guid: 6f0e422e09bedeb4e875148ba2c97577, type: 2}
+    - target: {fileID: 7829581639737572869, guid: 9b0e5706a516f1e4084b3fac937cdc7a, type: 3}
+      propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8810883169606451322, guid: 9b0e5706a516f1e4084b3fac937cdc7a, type: 3}
@@ -692,7 +760,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2088552757
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
@@ -755,7 +823,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 20, y: 308}
+  m_AnchoredPosition: {x: 137, y: 287}
   m_SizeDelta: {x: 1159.06, y: 172.19}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &621872691
@@ -801,8 +869,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: BOSS CONFLICT
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
-  m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6f0e422e09bedeb4e875148ba2c97577, type: 2}
+  m_sharedMaterial: {fileID: -1547219571993023506, guid: 6f0e422e09bedeb4e875148ba2c97577, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -862,7 +930,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -191.13971, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1243,7 +1311,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2088552757
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2004420578, guid: f6ce42cb1cda7ae4a9a121f809cbca12, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1343,7 +1411,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: cb6ec608430d85f4fa10b48590fc3b25, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1593,7 +1661,8 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: "Vi\u1EC7t: roi xong bi loi luon r"
+            m_StringArgument: "Vi\u1EC7t: r\u1ED3i xong b\u1ECB l\u1ED7i lu\xF4n
+              r\u1ED3i"
             m_BoolArgument: 0
           m_CallState: 2
     - m_PersistentCalls:
@@ -1607,7 +1676,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Hai: Mo uniti xem bi loi gi nha'
+            m_StringArgument: "H\u1EA3i: M\u1EDF Unity xem l\u1ED7i g\xEC nha"
             m_BoolArgument: 0
           m_CallState: 2
     - m_PersistentCalls:
@@ -1621,7 +1690,8 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Huy: oke mo xem no bi loi gi di xong ae cung sua luon'
+            m_StringArgument: "Huy: Oke m\u1EDF xem n\xF3 l\u1ED7i g\xEC \u0111i
+              r\u1ED3i ae c\xF9ng s\u1EEDa lu\xF4n"
             m_BoolArgument: 0
           m_CallState: 2
     - m_PersistentCalls:
@@ -1635,7 +1705,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Hai: sao ko bat dc nhi'
+            m_StringArgument: "H\u1EA3i: Sao ko b\u1EADt \u0111\u01B0\u1EE3c nh\u1EC9"
             m_BoolArgument: 0
           m_CallState: 2
     - m_PersistentCalls:
@@ -1649,7 +1719,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Viet: thu lai xem nao'
+            m_StringArgument: "Vi\u1EC7t: Th\u1EED l\u1EA1i xem n\xE0o"
             m_BoolArgument: 0
           m_CallState: 2
     - m_PersistentCalls:
@@ -1663,7 +1733,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Hai: t thu lai nay gio r ma'
+            m_StringArgument: "H\u1EA3i: E th\u1EED l\u1EA1i n\xE3y gi\u1EDD m\xE0"
             m_BoolArgument: 0
           m_CallState: 2
     - m_PersistentCalls:
@@ -1677,8 +1747,8 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Huy: sao no rung manh the,dung an nua can than no
-              bo pc day'
+            m_StringArgument: "Huy: Sao n\xF3 rung m\u1EA1nh th\u1EBF, \u0111\u1EEBng
+              \u1EA5n n\u1EEFa"
             m_BoolArgument: 0
           m_CallState: 2
     - m_PersistentCalls:
@@ -1692,7 +1762,8 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Viet: sao trong nhu sap no the'
+            m_StringArgument: "Vi\u1EC7t: Sao tr\xF4ng nh\u01B0 s\u1EAFp n\u1ED5
+              th\u1EBF"
             m_BoolArgument: 0
           m_CallState: 2
     - m_PersistentCalls:
@@ -1706,7 +1777,8 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Hai: thoi ma t ngung an r ma dung rung nua'
+            m_StringArgument: "H\u1EA3i: Th\xF4i m\xE0 t ng\u1EEBng \u1EA5n r\u1ED3i
+              m\xE0 \u0111\u1EEBng rung n\u1EEFa"
             m_BoolArgument: 0
           m_CallState: 2
     - m_PersistentCalls:
@@ -1720,7 +1792,8 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Ba Tan Vlog: chay di cac chau oi no r'
+            m_StringArgument: "B\xE0 T\xE2n Vlog: Ch\u1EA1y \u0111i c\xE1c ch\xE1u
+              \u01A1i n\u1ED5 r\u1ED3i"
             m_BoolArgument: 0
           m_CallState: 2
     - m_PersistentCalls:
@@ -1734,7 +1807,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Huy: e that a'
+            m_StringArgument: "Huy: \xEA th\u1EADt \xE0"
             m_BoolArgument: 0
           m_CallState: 2
     - m_PersistentCalls:
@@ -1776,7 +1849,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: "H\u1EA3i: Dung noi la..."
+            m_StringArgument: "H\u1EA3i: \u0110\u1EEBng n\xF3i l\xE0"
             m_BoolArgument: 0
           m_CallState: 2
     - m_PersistentCalls:
@@ -1790,7 +1863,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: "Vi\u1EC7t: no thanh boss luon a???"
+            m_StringArgument: "Vi\u1EC7t: N\xF3 th\xE0nh Boss lu\xF4n \xE0???"
             m_BoolArgument: 0
           m_CallState: 2
     - m_PersistentCalls:
@@ -1804,7 +1877,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Huy: Gio lam sao gio?'
+            m_StringArgument: "Huy: Gi\u1EDD l\xE0m sao gi\u1EDD?"
             m_BoolArgument: 0
           m_CallState: 2
     - m_PersistentCalls:
@@ -1818,7 +1891,8 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Viet, Huy, Hai: Cung nhau giai quyet no thoi!!!'
+            m_StringArgument: "Viet, Huy, Hai: C\xF9ng gi\u1EA3i quy\u1EBFt n\xF3
+              th\xF4i!!!"
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!114 &1476585190
@@ -2412,6 +2486,7 @@ MonoBehaviour:
   m_Events:
     m_Signals:
     - {fileID: 11400000, guid: f85b6b7a4183b1c4db9496abd359cbb1, type: 2}
+    - {fileID: 11400000, guid: 0b69f797e4010ec40b42adfbe574c0d4, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -2422,6 +2497,20 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 282407220}
+          m_TargetAssemblyTypeName: Animation2D.Core.SceneLoader, Animation2D.Core
+          m_MethodName: LoadNextScene
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -2507,7 +2596,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 1877999907
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &1756557387
 RectTransform:
@@ -2737,7 +2826,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: ac9bacf967cd285499604a03436b6b33, type: 3}
   m_Color: {r: 0.6509434, g: 0.21800464, b: 0.21800464, a: 1}
   m_FlipX: 0
@@ -2823,6 +2912,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9093657882097282983, guid: d0ad549b0bf32bb44b860d452f8a0063, type: 3}
       propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9093657882097282983, guid: d0ad549b0bf32bb44b860d452f8a0063, type: 3}
+      propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9093657882097282983, guid: d0ad549b0bf32bb44b860d452f8a0063, type: 3}
@@ -2846,3 +2939,4 @@ SceneRoots:
   - {fileID: 441101541}
   - {fileID: 2134296555}
   - {fileID: 1319967337}
+  - {fileID: 282407221}
