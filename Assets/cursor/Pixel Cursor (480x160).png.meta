@@ -1,0 +1,840 @@
+fileFormatVersion: 2
+guid: f6ce42cb1cda7ae4a9a121f809cbca12
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 110
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8542e5849708e5a45a26d2539ea6643d
+      internalID: -88822815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 110
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a43bc3e21e0ca094e9c95fe5ae36762f
+      internalID: -1248020369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 110
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 681dbb9f6945ca647aa390a1247e2494
+      internalID: 424316049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_3
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 110
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a60bedf11589a1d42b0b00a8ff6ebcd9
+      internalID: -2004420578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_4
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 110
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8824638fba5642647a8b394663c2cef7
+      internalID: 1001200502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_5
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 110
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eab43823bcf7bf4f9f3eb08955338ac
+      internalID: 1343624872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_6
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 110
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc379b24b139f7c458133be5563962b8
+      internalID: 56286051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_7
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 110
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1577660e2cd728d46a792e69f689202d
+      internalID: -2120947042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_8
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 106
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ac8780986a12f408b40aa842a568ad
+      internalID: 2060795390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_9
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 106
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a6232cd0b1605b41bb9dea20a842eda
+      internalID: -865707861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_10
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 106
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c75f84377c28e42a7547acf84a7634
+      internalID: -1946172158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_11
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 62
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b09bfc4a26f3794eaedfac0ac8f13ed
+      internalID: -1784045464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_12
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 61
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efa557ad54111a9428a3bb5b0cb37d41
+      internalID: -1883839295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_13
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 62
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611df9dab62e2774da43af8abd05dab8
+      internalID: -1697925129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_14
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 62
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a908122dd955b8f43a2c1b79ea7585f9
+      internalID: 2090264334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_15
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 61
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 444e18dd2ca0a4f42851a9bcf44f406e
+      internalID: 1925539779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_16
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 61
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a340177b1786a94391062657455ce7b
+      internalID: 2015724814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_17
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 61
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: debb8bed738f6c04aa8b29557b13129d
+      internalID: -1708036309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_18
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 61
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da0b8fade1cccee4db1405a0a868da1b
+      internalID: 827774676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_19
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 58
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fbc9a3f68baf4a4b8c8ae594828d4ef
+      internalID: 177351733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_20
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 58
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea15b9179fec8b947aff6bb0d4f2b561
+      internalID: 1587814201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_21
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 58
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffeceb8cd3f59174f95cea6203dab101
+      internalID: 24661221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_22
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 14
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 839ac1131214d4e4e9693b2605ca7974
+      internalID: -1790244945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_23
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 13
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f53cc4cfff320543b2c0ec70c9ecad9
+      internalID: -704094552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_24
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 14
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdf72d633242986458110ff0933147dc
+      internalID: 2105326284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_25
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 14
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 154b9b555bd237341a552a591a7c47d4
+      internalID: -1924493644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_26
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 14
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 316f46e65a6f7954d88124e87ffb0982
+      internalID: 1516709260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_27
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 14
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba27ac46ee0735440a6263f90323ca9f
+      internalID: 2035614137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_28
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 14
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 018f424a03a88164588fa85c0fcae6a4
+      internalID: -329402159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_29
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 14
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b16455185e1e958439b9f6bc5f8be9cf
+      internalID: 274492056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_30
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 10
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95432d6a0b8ad47418ad277aaa4d2b28
+      internalID: 974881498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_31
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 10
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5afb2a7d6555c9043bca7e4684e65926
+      internalID: 1622442576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Cursor (480x160)_32
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 10
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a82883f140d82842bd4762deb907b9e
+      internalID: 1517230664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Pixel Cursor (480x160)_0: -88822815
+      Pixel Cursor (480x160)_1: -1248020369
+      Pixel Cursor (480x160)_10: -1946172158
+      Pixel Cursor (480x160)_11: -1784045464
+      Pixel Cursor (480x160)_12: -1883839295
+      Pixel Cursor (480x160)_13: -1697925129
+      Pixel Cursor (480x160)_14: 2090264334
+      Pixel Cursor (480x160)_15: 1925539779
+      Pixel Cursor (480x160)_16: 2015724814
+      Pixel Cursor (480x160)_17: -1708036309
+      Pixel Cursor (480x160)_18: 827774676
+      Pixel Cursor (480x160)_19: 177351733
+      Pixel Cursor (480x160)_2: 424316049
+      Pixel Cursor (480x160)_20: 1587814201
+      Pixel Cursor (480x160)_21: 24661221
+      Pixel Cursor (480x160)_22: -1790244945
+      Pixel Cursor (480x160)_23: -704094552
+      Pixel Cursor (480x160)_24: 2105326284
+      Pixel Cursor (480x160)_25: -1924493644
+      Pixel Cursor (480x160)_26: 1516709260
+      Pixel Cursor (480x160)_27: 2035614137
+      Pixel Cursor (480x160)_28: -329402159
+      Pixel Cursor (480x160)_29: 274492056
+      Pixel Cursor (480x160)_3: -2004420578
+      Pixel Cursor (480x160)_30: 974881498
+      Pixel Cursor (480x160)_31: 1622442576
+      Pixel Cursor (480x160)_32: 1517230664
+      Pixel Cursor (480x160)_4: 1001200502
+      Pixel Cursor (480x160)_5: 1343624872
+      Pixel Cursor (480x160)_6: 56286051
+      Pixel Cursor (480x160)_7: -2120947042
+      Pixel Cursor (480x160)_8: 2060795390
+      Pixel Cursor (480x160)_9: -865707861
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
