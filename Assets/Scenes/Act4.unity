@@ -8816,10 +8816,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: for (int i = 0; i < 15; i++) { SummonPNGFile(); }
+  m_text: 'for (int i = 0; i < 15; i++)
+
+    { SummonPNGFile(); }'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6f0e422e09bedeb4e875148ba2c97577, type: 2}
+  m_sharedMaterial: {fileID: -1547219571993023506, guid: 6f0e422e09bedeb4e875148ba2c97577, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9593,7 +9595,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: db42773d960629c4c9e567fb55488838, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -15015,8 +15017,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'SpawnFireball() { x: 10, y: 20 }'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6f0e422e09bedeb4e875148ba2c97577, type: 2}
+  m_sharedMaterial: {fileID: -1547219571993023506, guid: 6f0e422e09bedeb4e875148ba2c97577, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -15212,6 +15214,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1191900229980458339, guid: 9b0e5706a516f1e4084b3fac937cdc7a, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 6f0e422e09bedeb4e875148ba2c97577, type: 2}
+    - target: {fileID: 1191900229980458339, guid: 9b0e5706a516f1e4084b3fac937cdc7a, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -1547219571993023506, guid: 6f0e422e09bedeb4e875148ba2c97577, type: 2}
+    - target: {fileID: 1191900229980458339, guid: 9b0e5706a516f1e4084b3fac937cdc7a, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7562201600807827327, guid: 9b0e5706a516f1e4084b3fac937cdc7a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4261
@@ -15251,6 +15265,26 @@ PrefabInstance:
     - target: {fileID: 7562201600807827327, guid: 9b0e5706a516f1e4084b3fac937cdc7a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829581639737572869, guid: 9b0e5706a516f1e4084b3fac937cdc7a, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 6f0e422e09bedeb4e875148ba2c97577, type: 2}
+    - target: {fileID: 7829581639737572869, guid: 9b0e5706a516f1e4084b3fac937cdc7a, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -1547219571993023506, guid: 6f0e422e09bedeb4e875148ba2c97577, type: 2}
+    - target: {fileID: 7829581639737572869, guid: 9b0e5706a516f1e4084b3fac937cdc7a, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8810883169606451322, guid: 9b0e5706a516f1e4084b3fac937cdc7a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 3611
+      objectReference: {fileID: 0}
+    - target: {fileID: 8810883169606451322, guid: 9b0e5706a516f1e4084b3fac937cdc7a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 174
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
