@@ -16,8 +16,8 @@ public class ChatUI : MonoBehaviour
     [SerializeField] private ChatBubble slot1; // bubble dưới (mới nhất)
 
     [Header("Behavior")]
-    [SerializeField] private float fadeDuration    = 0.3f;
-    [SerializeField] private float slideDuration   = 0.25f;
+    [SerializeField] private float fadeDuration = 0.3f;
+    [SerializeField] private float slideDuration = 0.25f;
     [SerializeField] private float slideUpDistance = 80f;
 
     // lưu vị trí gốc của 2 slot để biết chỗ cần reset về
